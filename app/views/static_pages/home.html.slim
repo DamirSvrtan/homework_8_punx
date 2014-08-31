@@ -6,4 +6,6 @@ h1 Welcome home
 - else
   h1 Not logged in
   = link_to 'Login with facebook', user_omniauth_authorize_path(:facebook)
+  br
+  = link_to 'Login with Google', user_omniauth_authorize_path(:google_oauth2)
 

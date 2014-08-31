@@ -13,6 +13,8 @@ development:
 test:
   <<: *default
   database: punx_booking_test
+  username: postgres
+  password:
 
 production:
   <<: *default
