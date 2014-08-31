@@ -1,8 +1,9 @@
 h1 Welcome home
 
-= link_to 'Login with facebook', user_omniauth_authorize_path(:facebook)
-
 - if signed_in?
+  = link_to 'Logout', destroy_user_session_path, method: :delete
   h1 Logged in
 - else
   h1 Not logged in
+  = link_to 'Login with facebook', user_omniauth_authorize_path(:facebook)
+
