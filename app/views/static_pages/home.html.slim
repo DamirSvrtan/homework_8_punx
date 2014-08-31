@@ -1,1 +1,8 @@
 h1 Welcome home
+
+= link_to 'Login with facebook', user_omniauth_authorize_path(:facebook)
+
+- if signed_in?
+  h1 Logged in
+- else
+  h1 Not logged in
