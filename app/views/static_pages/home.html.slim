@@ -2,6 +2,8 @@ h1 Welcome home
 
 - if signed_in?
   = link_to 'Logout', destroy_user_session_path, method: :delete
+  br
+  = link_to 'Login again with Google (to import contacts)', user_omniauth_authorize_path(:google_oauth2)
   h1 Logged in
 - else
   h1 Not logged in
