@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   get '/users/auth/google_oauth2/setup' => 'google_omniauth#setup'
 
+  resources :import_contacts, only: [:new, :create]
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

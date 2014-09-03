@@ -28,7 +28,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     def set_google_redirect_path
       if signed_in?
-        redirect_to(import_contacts_path)
+        redirect_to(new_import_contact_path)
       else
         redirect_to(root_path)
       end
