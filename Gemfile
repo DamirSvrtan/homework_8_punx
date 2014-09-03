@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'devise'
 gem 'omniauth-facebook'
 gem "omniauth-google-oauth2"
+gem 'omnicontacts', github: 'Diego81/omnicontacts'
 
 group :development do
   gem 'spring'

@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/Diego81/omnicontacts.git
+  revision: 24da3627aab1ae31eeaeb5d3b735d55d30e3a33b
+  specs:
+    omnicontacts (0.3.5)
+      json
+      rack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -185,6 +193,7 @@ DEPENDENCIES
   jquery-rails
   omniauth-facebook
   omniauth-google-oauth2
+  omnicontacts!
   pg
   pry-rails
   quiet_assets
